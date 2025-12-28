@@ -44,16 +44,15 @@ AddButton(Tab1o, {
   end
   })
     AddButton(Tab1o, {
-     Name = "Tuấn Anh IOS",
+     Name = "Night Hop",
     Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/TuanAnhIOS/refs/heads/main/TuanAnhIOS.lua"))()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/WhiteX1208/Scripts/refs/heads/main/HopScript.luau"))()
   end
   })
 AddButton(Tab1o, {
-     Name = "Rise-Evo",
+     Name = "ZisVn",
     Callback = function()
-	  getgenv().Team = "Pirates" --Marines, Pirates
-loadstring(game:HttpGet('https://raw.githubusercontent.com/TrashLua/BloxFruits/main/loadder.lua'))()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisHrVn"))()
   end
   })
     AddButton(Tab1o, {
@@ -186,3 +185,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/longdwieh/HoangLong-s
        loadstring(game:HttpGet("https://raw.githubusercontent.com/onion132005-bit/Onion133/refs/heads/main/Script.lua"))()
   end
   })
+
