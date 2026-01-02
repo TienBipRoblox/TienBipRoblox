@@ -3,7 +3,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       
        local Window = MakeWindow({
          Hub = {
-         Title = "Lọ Thánh (Premium)                      by Quang Huy",
+         Title = "Lọ Thánh (Premium)                      by TienLoDe",
          Animation = "Bú Cu Mãng Cầu"
          },
         Key = {
@@ -159,6 +159,12 @@ AddButton(Tab3o, {
       loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
   end
   })
+AddButton(Tab3o, {
+     Name = "Voidware Hud",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua", true))()
+  end
+  })
   AddButton(Tab1o, {
      Name = "Teddy Hud",
     Callback = function()
@@ -186,4 +192,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/longdwieh/HoangLong-s
        loadstring(game:HttpGet("https://raw.githubusercontent.com/onion132005-bit/Onion133/refs/heads/main/Script.lua"))()
   end
   })
+
 
