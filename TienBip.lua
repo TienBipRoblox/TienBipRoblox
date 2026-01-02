@@ -1,239 +1,31 @@
---// Services
-local UserInputService = game:GetService("UserInputService");
-
---// Library
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lxte/lates-lib/main/Main.lua"))()
-local Window = Library:CreateWindow({
-	Title = "???",
-	Theme = "Dark",
-	
-	Size = UDim2.fromOffset(570, 370),
-	Transparency = 0.2,
-	Blurring = true,
-	MinimizeKeybind = Enum.KeyCode.LeftAlt,
-})
-
-local Themes = {
-	Light = {
-		--// Frames:
-		Primary = Color3.fromRGB(232, 232, 232),
-		Secondary = Color3.fromRGB(255, 255, 255),
-		Component = Color3.fromRGB(245, 245, 245),
-		Interactables = Color3.fromRGB(235, 235, 235),
-
-		--// Text:
-		Tab = Color3.fromRGB(50, 50, 50),
-		Title = Color3.fromRGB(0, 0, 0),
-		Description = Color3.fromRGB(100, 100, 100),
-
-		--// Outlines:
-		Shadow = Color3.fromRGB(255, 255, 255),
-		Outline = Color3.fromRGB(210, 210, 210),
-
-		--// Image:
-		Icon = Color3.fromRGB(100, 100, 100),
-	},
-	
-	Dark = {
-		--// Frames:
-		Primary = Color3.fromRGB(30, 30, 30),
-		Secondary = Color3.fromRGB(35, 35, 35),
-		Component = Color3.fromRGB(40, 40, 40),
-		Interactables = Color3.fromRGB(45, 45, 45),
-
-		--// Text:
-		Tab = Color3.fromRGB(200, 200, 200),
-		Title = Color3.fromRGB(240,240,240),
-		Description = Color3.fromRGB(200,200,200),
-
-		--// Outlines:
-		Shadow = Color3.fromRGB(0, 0, 0),
-		Outline = Color3.fromRGB(40, 40, 40),
-
-		--// Image:
-		Icon = Color3.fromRGB(220, 220, 220),
-	},
-	
-	Void = {
-		--// Frames:
-		Primary = Color3.fromRGB(15, 15, 15),
-		Secondary = Color3.fromRGB(20, 20, 20),
-		Component = Color3.fromRGB(25, 25, 25),
-		Interactables = Color3.fromRGB(30, 30, 30),
-
-		--// Text:
-		Tab = Color3.fromRGB(200, 200, 200),
-		Title = Color3.fromRGB(240,240,240),
-		Description = Color3.fromRGB(200,200,200),
-
-		--// Outlines:
-		Shadow = Color3.fromRGB(0, 0, 0),
-		Outline = Color3.fromRGB(40, 40, 40),
-
-		--// Image:
-		Icon = Color3.fromRGB(220, 220, 220),
-	},
-
-}
-
---// Set the default theme
-Window:SetTheme(Themes.Dark)
-
---// Sections
-Window:AddTabSection({
-	Name = "Main",
-	Order = 1,
-})
-
-Window:AddTabSection({
-	Name = "Settings",
-	Order = 2,
-})
-
---// Tab [MAIN]
-
-local Main = Window:AddTab({
-	Title = "Components",
-	Section = "Main",
-	Icon = "rbxassetid://11963373994"
-})
-
-Window:AddSection({ Name = "Non Interactable", Tab = Main }) 
-
-
-Window:AddParagraph({
-	Title = "Paragraph",
-	Description = "Insert any important text here.",
-	Tab = Main
-}) 
-
-Window:AddSection({ Name = "Interactable", Tab = Main }) 
-
-Window:AddButton({
-	Title = "Button",
-	Description = "I wonder what this does",
-	Tab = Main,
-	Callback = function() 
-		Window:Notify({
-			Title = "hi",
-			Description = "i'm a notification", 
-			Duration = 5
-		})
-	end,
-}) 
-
-Window:AddSlider({
-	Title = "Slider",
-	Description = "Sliding",
-	Tab = Main,
-	MaxValue = 100,
-	Callback = function(Amount) 
-		warn(Amount);
-	end,
-}) 
-
-Window:AddToggle({
-	Title = "Toggle",
-	Description = "Switching",
-	Tab = Main,
-	Callback = function(Boolean) 
-		warn(Boolean);
-	end,
-}) 
-
-Window:AddInput({
-	Title = "Input",
-	Description = "Typing",
-	Tab = Main,
-	Callback = function(Text) 
-		warn(Text);
-	end,
-}) 
-
-
-Window:AddDropdown({
-	Title = "Dropdown",
-	Description = "Selecting",
-	Tab = Main,
-	Options = {
-		["An Option"] = "hi",
-		["And another"] = "hi",
-		["Another"] = "hi",
-	},
-	Callback = function(Number) 
-		warn(Number);
-	end,
-}) 
-
-
-
---// Tab [SETTINGS]
-local Keybind = nil
-local Settings = Window:AddTab({
-	Title = "Settings",
-	Section = "Settings",
-	Icon = "rbxassetid://11293977610",
-})
-
-
-Window:AddDropdown({
-	Title = "Set Theme",
-	Description = "Set the theme of the library!",
-	Tab = Settings,
-	Options = {
-		["Light Mode"] = "Light",
-		["Dark Mode"] = "Dark",
-		["Extra Dark"] = "Void",
-	},
-	Callback = function(Theme) 
-		Window:SetTheme(Themes[Theme])
-	end,
-}) 
-
-Window:AddToggle({
-	Title = "UI Blur",
-	Description = "If enabled, must have your Roblox graphics set to 8+ for it to work",
-	Default = true,
-	Tab = Settings,
-	Callback = function(Boolean) 
-		Window:SetSetting("Blur", Boolean)
-	end,
-}) 
-
-
-Window:AddSlider({
-	Title = "UI Transparency",
-	Description = "Set the transparency of the UI",
-	Tab = Settings,
-	AllowDecimals = true,
-	MaxValue = 1,
-	Callback = function(Amount) 
-		Window:SetSetting("Transparency", Amount)
-	end,
-}) 
-
-Window:Notify({
-	Title = "Hello World!",
-	Description = "Press Left Alt to Minimize and Open the tab!", 
-	Duration = 10
-})
-
-
-      
-       local Window = MakeWindow({
-       
+loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local Window = MakeWindow({
+         Hub = {
+         Title = "LọThanh(Premium)                      by Tien Crash",
+         Animation = "Yamate Tukoda"
+         },
+        Key = {
+        KeySystem = false,
+        Title = "Lọ Thánh",
+        Description = "Dùng Script Vui Vẻ",
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "Hello fen",
+       Incorrectkey = "Trứng Cút Đá Lô Tô",
+      }
+    }
+  })
 
        MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=114210713601757",
-       Size = {20, 20},
+       Image = "http://www.roblox.com/asset/?id=79404592423780",
+       Size = {50, 100},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
        Stroke = false,
        StrokeColor = Color3.fromRGB(255, 0, 0),
                      Color3.fromRGB(0, 0, 0),
                      Color3.fromRGB(255,255,255)
-      })
-      
+      })      
 ------ Tab
      local Tab1o = MakeTab({Name = "Script Blox Fruits"})
      local Tab2o = MakeTab({Name = "Khác"})
@@ -397,6 +189,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/longdwieh/HoangLong-s
        loadstring(game:HttpGet("https://raw.githubusercontent.com/onion132005-bit/Onion133/refs/heads/main/Script.lua"))()
   end
   })
+
 
 
 
