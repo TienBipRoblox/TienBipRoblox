@@ -1,14 +1,16 @@
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
 
-
-local Window = MakeWindow({
+      
+       local Window = MakeWindow({
          Hub = {
          Title = "LọThanh(Premium)                      by Tien Crash",
-         Animation = "Yamate Tukoda"
+         Animation = "Bản premium"
          },
-        KeySystem = false,
+        Key = {
+        KeySystem = true,
         Title = "Lọ Thánh",
         Description = "Dùng Script Vui Vẻ",
+        Keys = {"abcdxyz"},
         Notifi = {
         Notifications = true,
         CorrectKey = "Hello fen",
@@ -18,20 +20,21 @@ local Window = MakeWindow({
   })
 
        MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=79404592423780",
-       Size = {50, 100},
+       Image = "http://www.roblox.com/asset/?id=134852113716171",
+       Size = {20, 20},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
        Stroke = false,
        StrokeColor = Color3.fromRGB(255, 0, 0),
                      Color3.fromRGB(0, 0, 0),
                      Color3.fromRGB(255,255,255)
-      })      
+      })
+      
 ------ Tab
      local Tab1o = MakeTab({Name = "Script Blox Fruits"})
      local Tab2o = MakeTab({Name = "Khác"})
      local Tab3o = MakeTab({Name = "99 ngày Trong rừng"})
-     local Tab5o = MakeTab({Name = "Dead Rails"})
+     local Tab5o = MakeTab({Name = "Thông báo"})
      
 ------- BUTTON
 
@@ -146,21 +149,15 @@ AddButton(Tab1o, {
   end
   })
 AddButton(Tab5o, {
-     Name = "Null fire",
+     Name = "Thông báo của script Bear Hud tổng hợp",
     Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Huylovemy/Bear-hud-/refs/heads/main/Updatescript"))()
   end
   })
-AddButton(Tab3o, {
+  AddButton(Tab3o, {
      Name = "Foxname Hud",
     Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
-  end
-  })
-AddButton(Tab3o, {
-     Name = "Voidware Hud",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua", true))()
   end
   })
   AddButton(Tab1o, {
@@ -190,9 +187,3 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/longdwieh/HoangLong-s
        loadstring(game:HttpGet("https://raw.githubusercontent.com/onion132005-bit/Onion133/refs/heads/main/Script.lua"))()
   end
   })
-
-
-
-
-
-
