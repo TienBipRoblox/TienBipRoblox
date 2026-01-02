@@ -3,17 +3,17 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       
        local Window = MakeWindow({
          Hub = {
-         Title = " Lọ Thánh                       by Tienscript",
-         Animation = "Bản premium"
+         Title = "Lọ Thánh (Premium)                      by Quang Huy",
+         Animation = "Bú Cu Mãng Cầu"
          },
         Key = {
         KeySystem = false,
-        Title = "TienBoLo",
-        Description = "Dùng Script Vui Vẻ",
+        Title = "TiếnTổng Hợp",
+        Description = "Nhớ lọ",
         Notifi = {
         Notifications = true,
-        CorrectKey = "Bú cu",
-       Incorrectkey = "Bản Tổng Hợp",
+        CorrectKey = "Hello fen",
+       Incorrectkey = "BảnGheLam",
       }
     }
   })
@@ -33,7 +33,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      local Tab1o = MakeTab({Name = "Script Blox Fruits"})
      local Tab2o = MakeTab({Name = "Khác"})
      local Tab3o = MakeTab({Name = "99 ngày Trong rừng"})
-     local Tab5o = MakeTab({Name = "Dead rails"})
+     local Tab5o = MakeTab({Name = "Thông báo"})
      
 ------- BUTTON
 
@@ -44,15 +44,16 @@ AddButton(Tab1o, {
   end
   })
     AddButton(Tab1o, {
-     Name = "Night Hop ( có key )",
+     Name = "Tuấn Anh IOS",
     Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/WhiteX1208/Scripts/refs/heads/main/HopScript.luau"))()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/TuanAnhIOS/refs/heads/main/TuanAnhIOS.lua"))()
   end
   })
 AddButton(Tab1o, {
-     Name = "ZisVn",
+     Name = "Rise-Evo",
     Callback = function()
-	 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisHrVn"))()
+	  getgenv().Team = "Pirates" --Marines, Pirates
+loadstring(game:HttpGet('https://raw.githubusercontent.com/TrashLua/BloxFruits/main/loadder.lua'))()
   end
   })
     AddButton(Tab1o, {
@@ -146,20 +147,13 @@ AddButton(Tab1o, {
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Huylovemy/Pvp/refs/heads/main/Huypvp"))()
   end
   })
-  AddButton(Tab5o, {
-     Name = "Hung Hub",
-    Callback = function()
-       Auto_Execute = true
-       loadstring(game:HttpGet('https://raw.githubusercontent.com/hungquan99/HungHub/main/loader.lua'))()			
-  end
-  })
-  AddButton(Tab5o, {
+AddButton(Tab5o, {
      Name = "Null fire",
     Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
   end
   })
-  AddButton(Tab3o, {
+AddButton(Tab3o, {
      Name = "Foxname Hud",
     Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
@@ -192,6 +186,3 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/longdwieh/HoangLong-s
        loadstring(game:HttpGet("https://raw.githubusercontent.com/onion132005-bit/Onion133/refs/heads/main/Script.lua"))()
   end
   })
-
-
-
