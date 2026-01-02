@@ -8,12 +8,12 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
          },
         Key = {
         KeySystem = false,
-        Title = "Huy Tổng Hợp",
+        Title = "TienBoLo",
         Description = "Dùng Script Vui Vẻ",
         Notifi = {
         Notifications = true,
         CorrectKey = "Bú cu",
-       Incorrectkey = "Bản Tổng Hợp",
+       Incorrectkey = "Bản Skibidi ",
       }
     }
   })
@@ -33,7 +33,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      local Tab1o = MakeTab({Name = "Script Blox Fruits"})
      local Tab2o = MakeTab({Name = "Khác"})
      local Tab3o = MakeTab({Name = "99 ngày Trong rừng"})
-     local Tab5o = MakeTab({Name = "Thông báo"})
+     local Tab5o = MakeTab({Name = "Dead rails"})
      
 ------- BUTTON
 
@@ -44,7 +44,7 @@ AddButton(Tab1o, {
   end
   })
     AddButton(Tab1o, {
-     Name = "Night Hop",
+     Name = "Night Hop ( có key )",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/WhiteX1208/Scripts/refs/heads/main/HopScript.luau"))()
   end
@@ -145,11 +145,17 @@ AddButton(Tab1o, {
     Callback = function() 
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Huylovemy/Pvp/refs/heads/main/Huypvp"))()
   end
-  })
-AddButton(Tab5o, {
-     Name = "Thông báo của script Bear Hud tổng hợp",
+  AddButton(Tab5o, {
+     Name = "Hung Hub",
     Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Huylovemy/Bear-hud-/refs/heads/main/Updatescript"))()
+       Auto_Execute = true
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/hungquan99/HungHub/main/loader.lua'))()			
+  end
+  })
+  AddButton(Tab5o, {
+     Name = "Null fire",
+    Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
   end
   })
   AddButton(Tab3o, {
@@ -185,4 +191,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/longdwieh/HoangLong-s
        loadstring(game:HttpGet("https://raw.githubusercontent.com/onion132005-bit/Onion133/refs/heads/main/Script.lua"))()
   end
   })
+
 
