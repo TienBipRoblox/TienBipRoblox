@@ -3,7 +3,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       
        local Window = MakeWindow({
          Hub = {
-         Title = " Bỏ Lo                       by Tienscript",
+         Title = " Lọ Thánh                       by Tienscript",
          Animation = "Bản premium"
          },
         Key = {
@@ -13,7 +13,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
         Notifi = {
         Notifications = true,
         CorrectKey = "Bú cu",
-       Incorrectkey = "Bản Skibidi ",
+       Incorrectkey = "Bản Tổng Hợp",
       }
     }
   })
@@ -145,6 +145,7 @@ AddButton(Tab1o, {
     Callback = function() 
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Huylovemy/Pvp/refs/heads/main/Huypvp"))()
   end
+  })
   AddButton(Tab5o, {
      Name = "Hung Hub",
     Callback = function()
@@ -191,5 +192,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/longdwieh/HoangLong-s
        loadstring(game:HttpGet("https://raw.githubusercontent.com/onion132005-bit/Onion133/refs/heads/main/Script.lua"))()
   end
   })
+
 
 
