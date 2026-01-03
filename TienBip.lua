@@ -3,18 +3,18 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       
        local Window = MakeWindow({
          Hub = {
-         Title = "LọThanh(Premium)                      by Tien Crash",
+         Title = "Lọ Thánh(Premium)                      by Tiendz",
          Animation = "Bản premium"
          },
         Key = {
         KeySystem = true,
-        Title = "Lọ Thánh",
+        Title = "Tiến Tổng Hợp",
         Description = "Dùng Script Vui Vẻ",
-		Keys = {"lothanh"},
+        Keys = {""},
         Notifi = {
         Notifications = true,
         CorrectKey = "Hello fen",
-       Incorrectkey = "Trứng Cút Đá Lô Tô",
+       Incorrectkey = "Bản premium no key",
       }
     }
   })
@@ -34,7 +34,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      local Tab1o = MakeTab({Name = "Script Blox Fruits"})
      local Tab2o = MakeTab({Name = "Khác"})
      local Tab3o = MakeTab({Name = "99 ngày Trong rừng"})
-     local Tab5o = MakeTab({Name = "Dead Rails"})
+     local Tab5o = MakeTab({Name = "deadrails"})
      
 ------- BUTTON
 
@@ -105,7 +105,7 @@ AddButton(Tab2o, {
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Krovyn/KrovynHub/refs/heads/main/TOP_PVP"))()
   end
   })
-   AddButton(Tab2o, {
+AddButton(Tab2o, {
      Name = "God mod v2",
     Callback = function() 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rawbr10/Roblox-Scripts/refs/heads/main/God%20Mode%20Script%20Universal"))()
@@ -117,20 +117,20 @@ AddButton(Tab2o, {
        loadstring(game:HttpGet("https://raw.githubusercontent.com/ParadozCode/CentuDox-Hub-Paradoz-Hub/refs/heads/main/CentuDox.xyz", true))()
   end
   })
-  AddButton(Tab2o, {
+AddButton(Tab2o, {
      Name = "Huy mod",
     Callback = function() 
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Huylovemy/Huy-mod/refs/heads/main/Huy%20mod"))()     
   end
   })
-  AddButton(Tab2o, {
+AddButton(Tab2o, {
      Name = "Ambot",
     Callback = function() 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Totocoems/Ace/main/Ace"))()
   end
   })
 
-  AddButton(Tab1o, {
+AddButton(Tab1o, {
      Name = "Tăng hitbox",
     Callback = function() 
         loadstring(Game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/OniiChanVanThanhIOS/refs/heads/main/oniichanpakavanthanhios"))()
@@ -148,22 +148,18 @@ AddButton(Tab2o, {
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Huylovemy/Pvp/refs/heads/main/Huypvp"))()
   end
   })
-  AddButton(Tab5o, {
-     Name = "Null Fire",
+AddButton(Tab5o, {
+     Name = "Null fire",
     Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
   end
   })
-  AddButton(Tab5o, {
+AddButton(Tab5o, {
      Name = "TwoGunVolley",
     Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/TwoGunVolley/Dedrail/refs/heads/main/Protected_8860927939362090.txt))()
   end
-  AddButton(Tab5o, {
-     Name = "Aim Dead Rails",
-    Callback = function()
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Dead-Rails-Alpha-Alpha-Aimbot-with-bind-30004"))()
-  end
+  })
   AddButton(Tab3o, {
      Name = "Foxname Hud",
     Callback = function()
@@ -197,5 +193,3 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/longdwieh/HoangLong-s
        loadstring(game:HttpGet("https://raw.githubusercontent.com/onion132005-bit/Onion133/refs/heads/main/Script.lua"))()
   end
   })
-
-
