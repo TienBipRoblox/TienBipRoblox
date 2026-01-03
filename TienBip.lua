@@ -1,4 +1,4 @@
-loadstring(game:HttpGet((" https://raw.githubusercontent.com/TienBipRoblox/TienBipTrongCayDay/refs/heads/main/TienBipTrongCay")))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
 
       
        local Window = MakeWindow({
@@ -188,5 +188,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/longdwieh/HoangLong-s
        loadstring(game:HttpGet("https://raw.githubusercontent.com/onion132005-bit/Onion133/refs/heads/main/Script.lua"))()
   end
   })
+
 
 
