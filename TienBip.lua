@@ -3,18 +3,19 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       
        local Window = MakeWindow({
          Hub = {
-         Title = "Lọ Thánh(Premium)                      by Tiendz",
+         Title = "LoThanh Hud(Premium)                      by Tienscript",
          Animation = "Bản premium"
          },
         Key = {
         KeySystem = true,
         Title = "Tiến Tổng Hợp",
         Description = "Dùng Script Vui Vẻ",
+        KeyLink = "https://link4m.com/kjzVaRAh",
         Keys = {""},
         Notifi = {
         Notifications = true,
         CorrectKey = "Hello fen",
-       Incorrectkey = "Bản premium no key",
+       Incorrectkey = "Bản premium có key đâu mà nhập key",
       }
     }
   })
@@ -149,15 +150,9 @@ AddButton(Tab1o, {
   end
   })
 AddButton(Tab5o, {
-     Name = "Null fire",
+     Name = "NullFire",
     Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
-  end
-  })
-AddButton(Tab5o, {
-     Name = "TwoGunVolley",
-    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/TwoGunVolley/Dedrail/refs/heads/main/Protected_8860927939362090.txt))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
   end
   })
   AddButton(Tab3o, {
